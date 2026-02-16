@@ -1,0 +1,46 @@
+/* Basic Reset and Styling */
+body {
+    margin: 0;
+    padding: 0;
+    background: #00091B; /* Dark background color */
+    color: #fff; /* White text color */
+    font-family: sans-serif; /* Fallback font */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* Hide overflow to keep content centered */
+}
+
+.wrapper {
+    text-align: center;
+    padding: 20px;
+    animation: fadeIn 1000ms ease; /* Add a simple fade-in animation */
+}
+
+h1 {
+    font-size: 80px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.dot {
+    color: #e67e22; /* Accent color for the dot */
+}
+
+p {
+    font-size: 24px;
+    margin: 10px 0 30px;
+}
+
+/* Keyframes for the fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
